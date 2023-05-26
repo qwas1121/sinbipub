@@ -1,0 +1,33 @@
+#payment {
+  margin-top: 70px;
+  padding-bottom: 100px;
+}
+
+#payment h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  font-size: 15px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: #141414;
+}
+table .title {
+  font-weight: bold;
+}
+table .title,
+table .date {
+  font-size: 17px;
+  background: #d0c5d7;
+}
+
+table th,
+table td {
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 3px 0;
+  text-align: center;
+}

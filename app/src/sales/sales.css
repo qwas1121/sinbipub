@@ -1,0 +1,99 @@
+/* 매출입력 */
+.sales_table {
+  padding-bottom: 100px;
+  margin-top: 30px;
+}
+.sales_header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #fff;
+  padding-bottom: 30px;
+}
+.sales_header li {
+  float: left;
+  font-size: 18px;
+  padding: 7px 0;
+}
+.sales_header .left {
+  width: 10%;
+}
+.sales_header .right {
+  width: 90%;
+}
+
+.sales_table table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.sales_table table th,
+.sales_table table td {
+  padding: 7px;
+  color: #141414;
+  border-right: 1px solid #eee;
+  text-align: center;
+}
+.sales_table table th:last-child,
+.sales_table table td:last-child {
+  border-right: none;
+}
+.sales_table table th {
+  font-size: 25px;
+  background: #d0c5d7;
+}
+.sales_table table td {
+  font-size: 20px;
+  border-bottom: 1px solid #eee;
+}
+.sales_table table td.price {
+  text-align: right;
+}
+.sales_table table td.btn_wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.sales_header .saveBtn {
+  padding: 3px 20px;
+  border: none;
+  background: #561f74;
+  color: #fff;
+  border-radius: 3px;
+  margin-right: 10px;
+  font-size: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.sales_header input {
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 17px;
+}
+
+.numBtn_wrap button {
+  border: none;
+  background: #141414;
+  color: #fff;
+  border-radius: 3px;
+  margin-right: 10px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.ant-picker-input input {
+  font-size: 17px !important;
+}
+.numBtn_wrap input {
+  font-size: 17px;
+  width: 80px;
+  margin-right: 10px;
+  text-align: center;
+  height: 40px;
+}
+.sales_header .right .numBtn_wrap input {
+  width: 150px;
+}

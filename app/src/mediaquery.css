@@ -1,0 +1,182 @@
+#menuIcon {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: fixed;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+#menuIcon .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #0e2431;
+}
+#menuIcon .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+#menuIcon .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+#menuIcon .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+#menuIcon.clicked .line1 {
+  transform: rotate(45deg);
+}
+
+#menuIcon.clicked .line2 {
+  transform: scaleY(0);
+}
+
+#menuIcon.clicked .line3 {
+  transform: rotate(-45deg);
+}
+
+#menuIcon {
+  display: none;
+}
+#menuBG {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background: transparent;
+}
+#menuBG.clicked {
+  display: none;
+}
+
+@media (max-width: 1600px) {
+  #header li a {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1300px) {
+  #header li a {
+    font-size: 25px;
+  }
+  #content {
+    width: 100%;
+    left: 0;
+    padding: 7vw 8% 0;
+  }
+  #menuIcon {
+    display: flex;
+    z-index: 11;
+  }
+  #header {
+    width: 20%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 10;
+  }
+
+  #header.clicked {
+    transform: translateX(0%);
+  }
+  .cate_wrap table,
+  .cate_wrap .cate_title {
+    width: 100% !important;
+  }
+  .sales_header .right,
+  .sales_header .left {
+    width: 100% !important;
+  }
+  .numBtn_wrap button {
+    width: 15% !important;
+    margin-right: 5% !important;
+    height: 3.5vw !important;
+  }
+  .numBtn_wrap input {
+    width: 55% !important;
+    margin-right: 5% !important;
+    height: 3.5vw !important;
+  }
+  .sales_header .right .numBtn_wrap button {
+    width: 5vw !important;
+    height: 5vw !important;
+    margin-right: 2vw !important;
+  }
+  .sales_header .right .numBtn_wrap input {
+    width: 20vw !important;
+    height: 5vw !important;
+    margin-right: 2vw !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  #header {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .cont_title h1 {
+    font-size: 9vw;
+  }
+  #content {
+    padding: 15vw 5% 0;
+  }
+  #header {
+    width: 70%;
+  }
+  table .title,
+  table .date,
+  table,
+  .cate_wrap table td,
+  .sales_table table td,
+  .numBtn_wrap button,
+  .numBtn_wrap input {
+    font-size: 3vw !important;
+  }
+  #payment h2,
+  .cate_wrap h2 {
+    font-size: 5vw !important;
+  }
+  .cate_wrap table th,
+  .sales_table table th,
+  .inquiry table th {
+    font-size: 4vw !important;
+  }
+  .cate_wrap table td.btn_wrap {
+    flex-flow: column;
+  }
+  .cate_wrap table td.btn_wrap .edit,
+  .cate_wrap table td.btn_wrap .del {
+    margin-right: 0 !important;
+    font-size: 3vw !important;
+  }
+  .cate_wrap table td.btn_wrap .del {
+    margin-top: 1vw !important;
+  }
+  .cateCk {
+    grid-template-columns: auto !important;
+  }
+  .inquiry .header {
+    display: block !important;
+  }
+  .inquiry .ant-radio-group {
+    margin-bottom: 3vw !important;
+  }
+  .inquiry table .total,
+  .inquiry table .total th {
+    font-size: 3.5vw !important;
+  }
+  .login_wrap {
+    width: 70% !important;
+  }
+}

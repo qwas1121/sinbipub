@@ -1,0 +1,235 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 초기화 */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+.cf::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 0.75em;
+  font-family: "Noto Sans KR", sans-serif;
+  background: #fff;
+}
+
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ul,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+label,
+input,
+button,
+select,
+img {
+  vertical-align: middle;
+}
+
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+select {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* header */
+
+#header {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15%;
+  z-index: 1;
+  background-color: #8956a6;
+}
+
+#header ul {
+  /* display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 30px;
+  height: 100%;
+  align-items: center; */
+  padding: 50px 20px;
+}
+#header li {
+  padding: 20px 0;
+}
+#header li a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 30px;
+}
+#header li a:hover {
+  color: #fff;
+}
+#header li.active a {
+  color: #fff;
+  font-weight: 600;
+}
+
+.logout_btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 7px 20px;
+  border: none;
+  background: #333;
+  color: #fff;
+}
+.logout_btn:hover {
+  background: #000;
+}
+
+/* content */
+#content {
+  position: relative;
+  left: 15%;
+  width: 85%;
+  padding: 70px 50px 0;
+}
+
+.cont_title {
+  padding-bottom: 50px;
+}
+.cont_title h1 {
+  font-size: 50px;
+  font-weight: 900;
+  color: #561f74;
+}
+.cont_title p {
+  font-size: 15px;
+  color: #333;
+}
+.cont_title p span {
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.login_wrap h1 {
+  font-size: 30px;
+}
+.login_wrap p {
+  margin: 0px 0 30px;
+  font-size: 15px;
+}
+.login_wrap {
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

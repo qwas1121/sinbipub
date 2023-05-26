@@ -1,0 +1,97 @@
+.cate_wrap {
+  margin-bottom: 100px;
+}
+
+.cate_wrap h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.cate_wrap table {
+  width: 70%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.cate_wrap table th,
+.cate_wrap table td {
+  padding: 7px;
+  color: #141414;
+  border-right: 1px solid #eee;
+}
+.cate_wrap table th:last-child,
+.cate_wrap table td:last-child {
+  border-right: none;
+}
+.cate_wrap table th {
+  font-size: 25px;
+  background: #d0c5d7;
+}
+.cate_wrap table td {
+  font-size: 20px;
+  border-bottom: 1px solid #eee;
+}
+.cate_wrap table td.price {
+  text-align: right;
+}
+.cate_wrap table td.btn_wrap {
+  display: flex;
+  justify-content: center;
+}
+.cate_wrap table td.btn_wrap .edit {
+  padding: 3px 10px;
+  border: none;
+  background: #141414;
+  color: #fff;
+  border-radius: 3px;
+  margin-right: 10px;
+  font-size: 17px;
+}
+.cate_wrap table td.btn_wrap .del {
+  padding: 3px 10px;
+  border: none;
+  background: #cb4545;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 17px;
+}
+
+.cate_wrap form {
+  padding: 30px 0;
+  display: none;
+  justify-content: center;
+  width: 70%;
+}
+
+.cate_wrap form input {
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 17px;
+}
+.cate_wrap form button {
+  padding: 3px 10px;
+  border: none;
+  background: #141414;
+  color: #fff;
+  border-radius: 3px;
+  margin-right: 10px;
+  font-size: 17px;
+}
+
+.cate_wrap form.on {
+  display: flex;
+}
+.cate_wrap .cate_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+.cate_wrap .cate_title button {
+  padding: 3px 10px;
+  border: none;
+  background: #561f74;
+  color: #fff;
+  border-radius: 3px;
+  margin-right: 10px;
+  font-size: 17px;
+}

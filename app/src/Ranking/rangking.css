@@ -1,0 +1,14 @@
+.salesRankingTable .ant-pagination {
+  display: flex;
+  justify-content: center;
+}
+.ant-table-thead th {
+  text-align: center !important;
+}
+.bestData {
+  margin-left: 10px;
+}
+
+.salesRankingTable {
+  padding-bottom: 50px;
+}
